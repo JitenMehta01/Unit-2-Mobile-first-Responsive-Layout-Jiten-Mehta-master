@@ -1,69 +1,5 @@
 
-/* =================================
-  Web Fonts - Start
-==================================== */
-
-/** Cantarell bold **/
-
 @font-face {
-    font-family: 'cantarellbold';
-    src: url('Cantarell-Bold-webfont.eot');
-    src: url('Cantarell-Bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('Cantarell-Bold-webfont.woff2') format('woff2'),
-         url('Cantarell-Bold-webfont.woff') format('woff'),
-         url('Cantarell-Bold-webfont.ttf') format('truetype'),
-         url('Cantarell-Bold-webfont.svg#cantarellbold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-/** cantarellboldoblique **/
-
-@font-face {
-    font-family: 'cantarellboldoblique';
-    src: url('Cantarell-BoldOblique-webfont.eot');
-    src: url('Cantarell-BoldOblique-webfont.eot?#iefix') format('embedded-opentype'),
-         url('Cantarell-BoldOblique-webfont.woff2') format('woff2'),
-         url('Cantarell-BoldOblique-webfont.woff') format('woff'),
-         url('Cantarell-BoldOblique-webfont.ttf') format('truetype'),
-         url('Cantarell-BoldOblique-webfont.svg#cantarellboldoblique') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-/** cantarellboldoblique **/
-
-@font-face {
-    font-family: 'cantarelloblique';
-    src: url('Cantarell-Oblique-webfont.eot');
-    src: url('Cantarell-Oblique-webfont.eot?#iefix') format('embedded-opentype'),
-         url('Cantarell-Oblique-webfont.woff2') format('woff2'),
-         url('Cantarell-Oblique-webfont.woff') format('woff'),
-         url('Cantarell-Oblique-webfont.ttf') format('truetype'),
-         url('Cantarell-Oblique-webfont.svg#cantarelloblique') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-/** cantarellregular **/
-
-@font-face {
-    font-family: 'cantarellregular';
-    src: url('Cantarell-Regular-webfont.eot');
-    src: url('Cantarell-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('Cantarell-Regular-webfont.woff2') format('woff2'),
-         url('Cantarell-Regular-webfont.woff') format('woff'),
-         url('Cantarell-Regular-webfont.ttf') format('truetype'),
-         url('Cantarell-Regular-webfont.svg#cantarellregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
 
 
 
@@ -99,14 +35,6 @@ h3 {
 font-size:17px;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Cantarell Bold', Helvetica, Arial, sans-serif;
-}
 
 
 
@@ -219,8 +147,43 @@ display:block;
 }
 
 
+.main-footer{
+  visibility: hidden;
+  display:none;
+}
+
+/** mobile footer**/
+
+.mobile-footer h1{
+  display:inline;
+  float:left;
+  font-size:16px;
+  margin:0px;
+  color:#fff;
+}
+
+.mobile-student-name{
+  display:inline;
+  float:left;
+}
+
+.list-back-to-the-top{
+  display:inline;
+}
+
+.list-back-to-the-top li{
+  float:right;
+  display:inline;
+}
+
+#contact {
+  text-align:center;
+}
 
 
+#techdegree {
+  text-align:center;
+}
 
   /* =================================
     Media Query - Tablet
@@ -236,7 +199,9 @@ display:block;
   padding-top:2em;
   border-top:solid 2px lightgrey;
   width:100%;
+  text-align: center;
 }
+
 
 .portfolio-images img{
     display:block;
@@ -327,6 +292,33 @@ width:100%;
 
 
 
+.main-footer{
+  visibility: visible;
+  display:flex
+}
+
+.mobile-footer{
+  visibility: hidden;
+  display:none;
+
+}
+
+.main-footer h1{
+  display:inline;
+  float:left;
+  font-size:20px;
+}
+
+
+
+.nav-footer{
+  width:90%;
+}
+
+.footer-website-links{
+  float:right;
+}
+
   }
   /* =================================
     Media Query - Desktop
@@ -379,6 +371,13 @@ width:100%;
 
 .portfolio-units{
   width:33.3333%;
+}
+
+.nav-footer{
+  width:85%;
+}
+.footer-website-links{
+  margin:0;
 }
 
 
